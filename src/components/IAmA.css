@@ -1,0 +1,89 @@
+#iAmAContainer {
+    display: inline-block;
+}
+
+.iAmA {
+  font-family: 'Lato';
+  font-size: 2.75rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#iAmA_1 {
+  animation: text1;
+}
+#iAmA_2 {
+  animation: text2;
+}
+#iAmA_3 {
+  animation: text3;
+}
+#iAmA_4 {
+  animation: text4;
+}
+
+#iAmA_1, #iAmA_2, #iAmA_3, #iAmA_4 {
+  font-weight: 400;
+
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 30s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+#iAmA_1::after, #iAmA_2::after, #iAmA_3::after, #iAmA_4::after{
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes text1 {
+  0%, 25%, 100% {
+    width: 0;
+  }
+  5%, 20% {
+    width: 100%;
+  }
+}
+
+@keyframes text2 {
+  0%, 25%, 50%, 100% {
+    width: 0;
+  }
+  30%, 45% {
+    width: 100%;
+  }
+}
+
+@keyframes text3 {
+  0%, 50%, 75%, 100% {
+      width: 0;
+  }
+  55%, 70% {
+      width: 100%;
+  }
+}
+
+@keyframes text4 {
+  0%, 75%, 100% {
+    width: 0;
+  }
+  80%, 95% {
+    width: 100%;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
