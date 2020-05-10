@@ -1,0 +1,15 @@
+.sectionHeader {
+    font-family: 'Lato';
+    font-size: 2.75rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sectionHeaderUnderline {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #f51c40;
+    width: 5vmin;
+    display: inline-block;
+}

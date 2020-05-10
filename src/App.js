@@ -1,23 +1,29 @@
 import React from 'react';
 import me from './assets/me.jpg';
+import arrowRight from './assets/ic_next.svg'
 import './App.css';
 import IAmA from './components/IAmA.js'
 import Particles from 'react-particles-js';
 import colors from './util/colors.js';
 import SkillsIcons from './components/skills/SkillsIcons';
 import SkillsPillar from './components/skills/SkillsPillar';
+import ExperienceTimeline from './components/experience/ExperienceTimeline';
+import SectionHeader from './components/SectionHeader/SectionHeader';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      translate: 36
-    }
+    this.content = React.createRef();
+    this.scrollToContent = this.scrollToContent.bind(this)
+  }
+
+  scrollToContent() {
+    this.content.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   render () {
     let androidSkills = ['Kotlin', 'Dependency Injection (Dagger2 and Koin)', 'MVI and MVVM architecture', 'RxJava2',
-      'Coroutines', 'Retrofit', 'Room', 'Jetpack', 'ARCore', 'Espresso', 'Camerax']
+      'Coroutines', 'Retrofit', 'Room', 'Jetpack', 'ARCore', 'Espresso', 'CameraX']
     let backEndSkills = ['Microservices', 'Java', 'Dropwizard', 'Postgres', 'OAuth20', 'JUnit']
     let webSkills = ['HTML', 'CSS', 'JavaScript', 'React']
     let devOpsSkills = ['Docker', 'Kubernetes', 'CI/CD', 'AWS']
@@ -31,6 +37,12 @@ class App extends React.Component {
             <h1 id="introHeader">Hello! My name is <span style={{color: colors.deepBlue, fontWeight:400}}>Matt Ognibene</span></h1>
             <div id = "iAmAContainer">
               <IAmA />
+            </div>
+            <div id="viewMyWorkContainer">
+              <div id="viewMyWork" onClick={this.scrollToContent}>
+                <p>View My Work</p>
+                <img id="viewMyWorkArrow" src={arrowRight}/>
+              </div>
             </div>
             <Particles id="particles"
             params={{ 
@@ -66,7 +78,7 @@ class App extends React.Component {
                   }
                 },
                 line_linked: {
-                  enable: true,
+                  enable: false,
                   distance: 300,
                   color: "#bb16d2",
                   opacity: 0.4,
@@ -75,19 +87,21 @@ class App extends React.Component {
               }
             }} />
           </div>
-          <div id="content" class="section">
+          <div ref={this.content} id="content" class="section">
             <div class="aboutMeContainer" id="aboutMeHeader">
-              <h1 class="sectionHeader">About Me</h1>
+              <div class="sectionHeaderContainer">
+                <SectionHeader title="About Me" />
+              </div>
               <div class="profile-picture-container">
                 <img id="profile-picture" src={me}/>
               </div>
               <div id="aboutMeTextContainer">
                 <p class="sectionText" id="aboutMeText">
-                  Current Employment: Software Development Co-Op at <a href="https://whoop.com">WHOOP Inc</a> <br/>
-                  Education: Northeastern University current third-year <br/>
-                  Major: Computer Science with a minor in Math <br/>
-                  Location: Boston, MA <br/>
-                  NBA Comparison: Allen Iverson
+                  <span style={{fontWeight:700}}>Current Employment:</span> Software Development Co-Op at <a href="https://whoop.com">WHOOP Inc</a> <br/>
+                  <span style={{fontWeight:700}}>Education:</span> Northeastern University current third-year <br/>
+                  <span style={{fontWeight:700}}>Major:</span> Computer Science with a minor in Math <br/>
+                  <span style={{fontWeight:700}}>Location:</span> Boston, MA <br/>
+                  <span style={{fontWeight:700}}>NBA Comparison: </span>Allen Iverson
                 </p> 
               </div>
               <div id="aboutMeBlurbContainer">
@@ -98,38 +112,62 @@ class App extends React.Component {
                 </p>
               </div>
               <div id="skillsContainer">
-                <h1 class="sectionHeader">Skills</h1>
+                <SectionHeader title="Skills"/>
                 <SkillsIcons />
                 <div>
                   <div class="skillsPillarContainer">
                     <SkillsPillar
-                      skills={androidSkills} 
+                      skills={[
+                        {
+                          proficiency: 'Strong With',
+                          skills: androidSkills
+                        }
+                      ]}
                       percentage='90%' 
-                      pillar='Android'
-                      proficiencyLevel="Strong with"/>
+                      pillar='Android'/>
                   </div>
                   <div class="skillsPillarContainer">
                     <SkillsPillar
-                      skills={backEndSkills} 
+                      skills={[
+                        {
+                          proficiency: 'Proficient With',
+                          skills: backEndSkills
+                        }
+                      ]}
                       percentage='60%' 
-                      pillar='Backend'
-                      proficiencyLevel="Proficient with"/>
+                      pillar='Backend'/>
                   </div>
                   <div class="skillsPillarContainer">
                     <SkillsPillar
-                      skills={webSkills} 
+                      skills={[
+                        {
+                          proficiency: 'Proficient With',
+                          skills: webSkills
+                        },
+                        {
+                          proficiency: 'Familiar With',
+                          skills: ['jQuery', 'Bootstrap']
+                        }
+                      ]}
                       percentage='60%' 
-                      pillar='Web'
-                      proficiencyLevel="Proficient with"/>
+                      pillar='Web' />
                   </div>
                   <div class="skillsPillarContainer">
                     <SkillsPillar
-                      skills={devOpsSkills} 
+                      skills={[
+                        {
+                          proficiency: 'Familiar With',
+                          skills: devOpsSkills
+                        }
+                      ]}
                       percentage='30%' 
-                      pillar='Dev Ops'
-                      proficiencyLevel="Familiar With"/>
+                      pillar='Dev Ops'/>
                   </div>
                 </div>
+              </div>
+              <div id="experienceContainer">
+                <SectionHeader title="Experience"/>
+                <ExperienceTimeline />
               </div>
             </div>
           </div>

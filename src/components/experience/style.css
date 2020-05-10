@@ -1,0 +1,27 @@
+.vertical-timeline::before {
+    background: #808080;
+}
+
+.vertical-timeline-element-icon  {
+    display: block;
+
+    left: -12px;
+}
+
+.vertical-timeline-element-icon img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    left: -24px;
+    border-radius: 10px
+}
+.vertical-timeline-element-content {
+    position: relative;
+    margin-left: 80px;
+    background: white;
+    border-radius: 0.25em;
+    padding: 1em;
+    -webkit-box-shadow: 8px 20px 54px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 20px 54px -8px rgba(0,0,0,0.75);
+    box-shadow: 8px 20px 54px -8px rgba(0,0,0,0.75);
+  }
