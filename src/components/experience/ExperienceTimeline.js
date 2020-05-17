@@ -22,7 +22,14 @@ class ExperienceTimeline extends React.Component {
             <h3 className="vertical-timeline-element-title">Software Development Co-Op @ WHOOP</h3>
             <h4 className="vertical-timeline-element-subtitle">Unlocking Human Performance</h4>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              During my six month co-op at WHOOP, I worked within the Community feature-team to develop and improve the social experience between WHOOP athletes.
+              The goal of our team was to create a stickier experience within the app by creating a social web, leading to greater retention of users.
+              Ultimately, we were succesful in our goal, achieving an increase of TODO insert state here. <br/><br/>
+              • Implemented new featurework for Android through building custom and reusable UI components. <br/>
+              • Improved efficiency within the Android app by utilizing pagination, implementing caching with Room, and upgrading to Jetpack libraries. <br/>
+              • Designed and deployed back-end API resources in a scalable fashion by using Java microservices. <br/>
+              • Created sharable image templates that are automatically populated with user's statistics using React. <br/>
+              • Something about Kalman's
             </p>
           </VerticalTimelineElement>
   

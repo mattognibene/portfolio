@@ -107,8 +107,13 @@ class App extends React.Component {
               <div id="aboutMeBlurbContainer">
                 <p id="aboutMeBlurb">
                   Hello! My name is Matt Ognibene. <br/>
-                  I am a software developer living in Boston, MA (originally from Linwood, NJ). 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Welcome to my website showcasing my career, goals, personal projects, and more!  I am a software developer and Northeastern University student currently living in Boston, MA (originally from Linwood, NJ). I am passionate about shipping product that is not only of state of the art quality, but also 
+                  aligns with my passions and improves the lives and wellness of its users. <br/><br/>
+                  <span class="aboutMeSubhead">Dedicated to great product. Advocate for the end-user.</span><br/><br/>
+                  Within the software industry, it is my mission to work towards creating a meaningful product that leads people to healthier and more active lives, and it is a goal
+                  of mine to work with passionate designers, developers, product managers, and thought leaders to achieve this mission. <br/><br/>
+                  Some other goals of mine include teaching and developing newly declared computer science students, supporting local organizions such as BARCC and JDRF New England, 
+                  running a marathon, and earning 1 million bells in Animal Crossings: New Horizons.
                 </p>
               </div>
               <div id="skillsContainer">

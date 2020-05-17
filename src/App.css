@@ -161,6 +161,13 @@ a:hover {
   text-align: left;
 }
 
+.aboutMeSubhead {
+  font-weight: 700;
+  text-align: left;
+  font-family: 'Lato';
+  font-size: 2rem;
+}
+
 #skillsContainer {
   padding-top: 24px;
 }

@@ -13,3 +13,6 @@
     width: 5vmin;
     display: inline-block;
 }
+.sectionHeaderContainer {
+    margin-bottom: 16px;
+}
