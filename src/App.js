@@ -1,14 +1,24 @@
 import React from 'react';
-import me from './assets/me.jpg';
-import arrowRight from './assets/ic_next.svg'
-import './App.css';
-import IAmA from './components/IAmA.js'
 import Particles from 'react-particles-js';
-import colors from './util/colors.js';
+
+import './App.css';
+
+import IAmA from './components/IAmA.js'
 import SkillsIcons from './components/skills/SkillsIcons';
 import SkillsPillar from './components/skills/SkillsPillar';
 import ExperienceTimeline from './components/experience/ExperienceTimeline';
 import SectionHeader from './components/SectionHeader/SectionHeader';
+import ProjectCard from './components/projects/ProjectCard'
+import ContactMe from './components/contact/ContactMe'
+
+import colors from './util/colors.js';
+import me from './assets/me.jpg';
+import arrowRight from './assets/ic_next.svg'
+import stoke from './assets/ic_stoke.png'
+import bakedUp from './assets/ic_baked_up.jpg'
+import cookiecutter from './assets/ic_cookie.png'
+import deltnu from './assets/ic_delt.jpg'
+
 
 class App extends React.Component {
   constructor(props) {
@@ -98,7 +108,7 @@ class App extends React.Component {
               <div id="aboutMeTextContainer">
                 <p class="sectionText" id="aboutMeText">
                   <span style={{fontWeight:700}}>Current Employment:</span> Software Development Co-Op at <a href="https://whoop.com">WHOOP Inc</a> <br/>
-                  <span style={{fontWeight:700}}>Education:</span> Northeastern University current third-year <br/>
+                  <span style={{fontWeight:700}}>Education:</span> Northeastern University third-year <br/>
                   <span style={{fontWeight:700}}>Major:</span> Computer Science with a minor in Math <br/>
                   <span style={{fontWeight:700}}>Location:</span> Boston, MA <br/>
                   <span style={{fontWeight:700}}>NBA Comparison: </span>Allen Iverson
@@ -106,13 +116,13 @@ class App extends React.Component {
               </div>
               <div id="aboutMeBlurbContainer">
                 <p id="aboutMeBlurb">
-                  Hello! My name is Matt Ognibene. <br/>
+                  Hello! My name is Matt Ognibene.<br/>
                   Welcome to my website showcasing my career, goals, personal projects, and more!  I am a software developer and Northeastern University student currently living in Boston, MA (originally from Linwood, NJ). I am passionate about shipping product that is not only of state of the art quality, but also 
                   aligns with my passions and improves the lives and wellness of its users. <br/><br/>
                   <span class="aboutMeSubhead">Dedicated to great product. Advocate for the end-user.</span><br/><br/>
                   Within the software industry, it is my mission to work towards creating a meaningful product that leads people to healthier and more active lives, and it is a goal
                   of mine to work with passionate designers, developers, product managers, and thought leaders to achieve this mission. <br/><br/>
-                  Some other goals of mine include teaching and developing newly declared computer science students, supporting local organizions such as BARCC and JDRF New England, 
+                  Some other goals of mine include teaching and developing newly declared computer science students, supporting local organizations such as BARCC and JDRF New England, 
                   running a marathon, and earning 1 million bells in Animal Crossings: New Horizons.
                 </p>
               </div>
@@ -174,6 +184,36 @@ class App extends React.Component {
                 <SectionHeader title="Experience"/>
                 <ExperienceTimeline />
               </div>
+              <div id="projectsContainer">
+                <SectionHeader title="Projects"/>
+                <ProjectCard
+                  icon={stoke}
+                  title="Stoke for Android"
+                  content="Android app that gives an aggregate beach rating based on current weather and marine data."
+                  bullets={["Pulls data from the OpenWeather API and MSW API", "Designed using clean architecture and MVI implemented through Rx streams"]}/>
+                <ProjectCard
+                  icon={bakedUp}
+                  title="Baked Up Miami"
+                  content="Developed the Baked Up Miami website to create an easier user experience, improved personal branding, and analytical tools to track revenue and manage the progress of orders."
+                  bullets={["Serverless architecture", " Integrated Firebase, Calendar API, and Instagram API to create organizational business tools"]}/>
+                <ProjectCard
+                  icon={cookiecutter}
+                  title="Rightpoint Open Source Android Template"
+                  content="Contributed to the Rightpoint open-source Cookiecutter template used to generate boilerplate code and provide commonly used architectural components for new Android projects."
+                  bullets={["Built custom linters and added code-coverage tools"]}/>
+                <ProjectCard
+                  icon={deltnu}
+                  title="DeltNU for Android"
+                  content="Android app used by fraternities for organization and communication."
+                  bullets={["Take attendance using QR codes built through Firebase ML Kit and CameraX", 
+                  "View and record community service hours and see where other members are volunteering their time",
+                  "One-tap and real-time voting interface",
+                  "Active brother and alumni directory integrated with native contacts and messaging"]}/>
+              </div>
+            </div>
+            <div id="contactMeContainer">
+                <SectionHeader title="Let's Get in Touch!"/>
+                <ContactMe />
             </div>
           </div>
         </body>

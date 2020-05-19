@@ -178,3 +178,11 @@ a:hover {
   padding: 18px;
   vertical-align: top;
 }
+
+#projectsContainer {
+  display: inline-block;
+}
+
+#contactMeContainer {
+  padding-bottom: 200px;
+}

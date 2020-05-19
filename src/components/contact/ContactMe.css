@@ -1,0 +1,32 @@
+.icon {
+    width: 3vmin;
+    height: 3vmin;
+    padding: 8px;
+    transition: 0.8s;
+    filter: invert(0%) sepia(89%) saturate(7458%) hue-rotate(195deg) brightness(110%) contrast(110%);
+}
+
+.icon:hover {
+    filter: invert(43%) sepia(27%) saturate(6796%) hue-rotate(323deg) brightness(101%) contrast(98%);
+}
+
+#mailIcon {
+    width: 2vmin;
+    height: 2vmin;
+    padding: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#email{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    font-size: 1.5rem;
+    font-weight: 700px;
+    color: #404040;
+}
+
+#linkContainer {
+    margin-top: 16px;
+}
