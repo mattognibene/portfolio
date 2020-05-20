@@ -10,3 +10,10 @@
 .skillsIcon:hover {
   filter: invert(43%) sepia(27%) saturate(6796%) hue-rotate(323deg) brightness(101%) contrast(98%);
 }
+
+@media screen and (max-width: 800px) {
+  .skillsIcon {
+    width: 8vw;
+    height: 8vw;
+  }
+}

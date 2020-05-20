@@ -44,7 +44,7 @@ class App extends React.Component {
         </head>
         <body className="App-body">
           <div id="introContainer" class="section">
-            <h1 id="introHeader">Hello! My name is <span style={{color: colors.deepBlue, fontWeight:400}}>Matt Ognibene</span></h1>
+            <h1 id="introHeader">Hello! My name is <span style={{color: colors.deepBlue, fontWeight:400}}>Matt&nbsp;Ognibene</span></h1>
             <div id = "iAmAContainer">
               <IAmA />
             </div>
@@ -116,7 +116,7 @@ class App extends React.Component {
               </div>
               <div id="aboutMeBlurbContainer">
                 <p id="aboutMeBlurb">
-                  Hello! My name is Matt Ognibene.<br/>
+                  Hello! My name is Matt&nbsp;Ognibene.<br/><br/>
                   Welcome to my website showcasing my career, goals, personal projects, and more!  I am a software developer and Northeastern University student currently living in Boston, MA (originally from Linwood, NJ). I am passionate about shipping product that is not only of state of the art quality, but also 
                   aligns with my passions and improves the lives and wellness of its users. <br/><br/>
                   <span class="aboutMeSubhead">Dedicated to great product. Advocate for the end-user.</span><br/><br/>
@@ -204,7 +204,7 @@ class App extends React.Component {
                 <ProjectCard
                   icon={deltnu}
                   title="DeltNU for Android"
-                  content="Android app used by fraternities for organization and communication."
+                  content="Android app used fraternities for organization and communication"
                   bullets={["Take attendance using QR codes built through Firebase ML Kit and CameraX", 
                   "View and record community service hours and see where other members are volunteering their time",
                   "One-tap and real-time voting interface",

@@ -17,13 +17,6 @@ a:hover {
 .App-body {
   margin: 0;
   height: 100vh;
-  -webkit-scroll-snap-type: y proximity;
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-}
-
-.section {
-  scroll-snap-align: start;
 }
 
 #introContainer {
@@ -186,3 +179,69 @@ a:hover {
 #contactMeContainer {
   padding-bottom: 200px;
 }
+
+@media screen and (max-width: 800px) {
+  #introHeader {
+    font-size: 2rem;
+    padding-top: 30vh;
+  }
+  #viewMyWork {
+    padding: 16px 24px;
+  }
+  
+  #viewMyWork p {
+    font-size: 1.25rem;
+  }
+  
+  #viewMyWorkArrow {
+    width: 18px;
+    height: 18px;
+  }
+
+  #aboutMeBlurbContainer {
+    margin-top: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  #profile-picture {
+    max-width: 50vw;
+    max-height: 50vw;
+  }
+
+  .profile-picture-container {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 28vw;
+  }
+
+  #aboutMeText {
+    margin-top: 36px;
+  }  
+}
+
+@media screen and (max-width: 950px) {
+  .skillsPillarContainer {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skillsPillarContainer {
+    width: 85vw;
+  }
+}
+
+@media screen and (min-width: 950px) {
+
+  .App-body {
+    -webkit-scroll-snap-type: y proximity;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+  }
+
+  .section {
+    scroll-snap-align: start;
+  }
+}
+

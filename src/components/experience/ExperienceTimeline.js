@@ -11,7 +11,7 @@ class ExperienceTimeline extends React.Component {
     render() {
       var contentStyle = { background: '#fff', color: '#404040', textAlign:'left', fontFamily: 'Lato' }
       return (
-        <VerticalTimeline layout="1-column">
+        <VerticalTimeline layout="1-column" id="content">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={contentStyle}
@@ -42,7 +42,7 @@ class ExperienceTimeline extends React.Component {
             <h3 className="vertical-timeline-element-title">Android Development Co-Op @ Rightpoint</h3>
             <h4 className="vertical-timeline-element-subtitle">We Ship Apps!</h4>
             <p>
-              During my eight month co-op with Rightpoint, I worked as and Android developer building a single sign-on security app for a client consisting of four major mobile carriers. 
+              During my eight month co-op with Rightpoint, I worked as an Android developer building a single sign-on security app for a client consisting of four major mobile carriers. 
               I started on this project from its very conception, allowing me to make a large impact on its initial foundation and play a role on deciding the best way to design its architecture. <br/><br/>
               • Collaborated closely with designers, product managers, and developers to make the best possible product decisions as a team. <br/>
               • Advised team with technical expertise through feature refinement, design reviews, code reviews, and project estimations. <br/>

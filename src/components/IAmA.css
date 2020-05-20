@@ -87,3 +87,9 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .iAmA {
+    font-size: 1.25rem;
+  }
+}

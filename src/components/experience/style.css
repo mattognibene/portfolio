@@ -1,10 +1,13 @@
+#content {
+    margin-left: 12px;
+}
+
 .vertical-timeline::before {
     background: #808080;
 }
 
 .vertical-timeline-element-icon  {
     display: block;
-
     left: -12px;
 }
 
@@ -13,7 +16,7 @@
     width: 64px;
     height: 64px;
     left: -24px;
-    border-radius: 10px
+    border-radius: 10px;
 }
 .vertical-timeline-element-content {
     position: relative;
