@@ -58,7 +58,7 @@ class App extends React.Component {
             params={{ 
               particles: { 
                 number: { 
-                  value: 60, 
+                  value: 30, 
                   density: { 
                     enable: true, 
                     value_area: 800, 
@@ -88,7 +88,7 @@ class App extends React.Component {
                   }
                 },
                 line_linked: {
-                  enable: false,
+                  enable: true,
                   distance: 300,
                   color: "#bb16d2",
                   opacity: 0.4,
@@ -107,8 +107,8 @@ class App extends React.Component {
               </div>
               <div id="aboutMeTextContainer">
                 <p class="sectionText" id="aboutMeText">
-                  <span style={{fontWeight:700}}>Current Employment:</span> Software Development Co-Op at <a href="https://whoop.com">WHOOP Inc</a> <br/>
-                  <span style={{fontWeight:700}}>Education:</span> Northeastern University third-year <br/>
+                  <span style={{fontWeight:700}}>Previous Employment:</span> Software Development Co-Op at <a href="https://whoop.com">WHOOP Inc</a> <br/>
+                  <span style={{fontWeight:700}}>Education:</span> Northeastern University fourth-year <br/>
                   <span style={{fontWeight:700}}>Major:</span> Computer Science with a minor in Math <br/>
                   <span style={{fontWeight:700}}>Location:</span> Boston, MA <br/>
                   <span style={{fontWeight:700}}>NBA Comparison: </span>Allen Iverson
@@ -118,7 +118,7 @@ class App extends React.Component {
                 <p id="aboutMeBlurb">
                   Hello! My name is Matt&nbsp;Ognibene.<br/><br/>
                   Welcome to my website showcasing my career, goals, personal projects, and more!  I am a software developer and Northeastern University student currently living in Boston, MA (originally from Linwood, NJ). I am passionate about shipping product that is not only of state of the art quality, but also 
-                  aligns with my passions and improves the lives and wellness of its users. <br/><br/>
+                  aligns with my passions and improves the health, wellness, and interpersonal connections of its users. <br/><br/>
                   <span class="aboutMeSubhead">Dedicated to great product. Advocate for the end-user.</span><br/><br/>
                   Within the software industry, it is my mission to work towards creating a meaningful product that leads people to healthier and more active lives, and it is a goal
                   of mine to work with passionate designers, developers, product managers, and thought leaders to achieve this mission. <br/><br/>

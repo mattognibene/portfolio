@@ -16,19 +16,20 @@ class ExperienceTimeline extends React.Component {
             className="vertical-timeline-element--work"
             contentStyle={contentStyle}
             contentArrowStyle={{ borderRight: '7px solid  #0057c2' }}
-            date="January 2020 - Present"
+            date="January 2020 - June 2020"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<img src={whooplogo}/>}>
             <h3 className="vertical-timeline-element-title">Software Development Co-Op @ WHOOP</h3>
             <h4 className="vertical-timeline-element-subtitle">Unlocking Human Performance</h4>
             <p>
-              During my six month co-op at WHOOP, I worked within the Community feature-team to develop and improve the social experience between WHOOP athletes.
-              The goal of our team was to create a stickier experience within the app by creating a social web, leading to greater retention of users.<br/><br/>
-              • Built custom and reusable UI components to implement new feature-work. <br/>
-              • Improved efficiency within the Android app by utilizing pagination, implementing caching with Room, and upgrading to Jetpack libraries. <br/>
-              • Designed and deployed back-end API resources in a scalable fashion by using Java microservices. <br/>
-              • Created sharable image templates that are automatically populated with user's statistics using React. <br/>
-              • Implemented prediction-correction algorithms to accurately record GPS data. 
+            During my six month co-op at WHOOP, I worked within the Community feature-team to develop and improve the social experience between WHOOP athletes. 
+            The goal of our team was to create a stickier experience within the app by creating a social web between athletes, leading to greater retention of users.<br/><br/>
+            • Built and maintained new Android features for the Community facet of the app.<br/>
+            • Designed, developed, and deployed scalable APIs using Java microservices.<br/>
+            • Developed external-facing user interfaces using React, HTML, and CSS.<br/>
+            • Implemented the Android, back-end, and web components of an integration with Strava.<br/>
+            • Researched and implemented prediction-correction algorithms to smooth GPS data to 99.87% accuracy, and presented them in a tech talk to the entire engineering department.<br/>
+            • Wrote scripts to aggregate data collected from beta-testers.<br/>
             </p>
           </VerticalTimelineElement>
   
@@ -36,19 +37,20 @@ class ExperienceTimeline extends React.Component {
             className="vertical-timeline-element--work"
             contentStyle={contentStyle}
             contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-            date="January 2019 - September 2019"
+            date="January 2019 - August 2019"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<img src={rightlabs}/>}>
             <h3 className="vertical-timeline-element-title">Android Development Co-Op @ Rightpoint</h3>
             <h4 className="vertical-timeline-element-subtitle">We Ship Apps!</h4>
             <p>
-              During my eight month co-op with Rightpoint, I worked as an Android developer building a single sign-on security app for a client consisting of four major mobile carriers. 
-              I started on this project from its very conception, allowing me to make a large impact on its initial foundation and play a role on deciding the best way to design its architecture. <br/><br/>
-              • Collaborated closely with designers, product managers, and developers to make the best possible product decisions as a team. <br/>
-              • Advised team with technical expertise through feature refinement, design reviews, code reviews, and project estimations. <br/>
+            During my eight month co-op with Rightpoint, I worked as an Android developer building a single sign-on security app for a client consisting of four major mobile carriers. I started on this project from its very conception,
+             allowing me to make a large impact on its initial foundation and play a role on deciding the best way to design its architecture. <br/><br/>
+              • Developed a single sign-on security app for Android working as a software engineer.<br/>
+              • Collaborated closely with designers, product managers, and developers to make the best possible product decisions as a team.<br/>
+              • Advised team with technical expertise through feature refinement, design reviews, code reviews, and project estimations.<br/>
               • Worked as a team member to consistently deliver sprint commitments on time, minimize tech debt, create intuitive UX, and communicate potential product risks to the client.<br/>
-              • Implemented features such as the logic for authorizing a third-party app, recovering a user account, onboarding a new user, managing authentication tokens, and handling push notifications.<br/>
-              • Spearheaded the automated testing suite by implementing UI and integration tests with Espresso and Mockito, implementing multi-app tests to verify deep linking, and configuring automatic upload and execution of tests on Browserstack upon every CircleCI build.
+              • Practiced agile methodologies as a member of scrum team.<br/>
+              • Spearheaded the automated testing suite by implementing UI and integration tests with Espresso and Mockito, and configuring automatic execution of tests on BrowserStack directly from the CI/CD pipeline.<br/>
             </p>
           </VerticalTimelineElement>
 
