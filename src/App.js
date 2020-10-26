@@ -107,7 +107,7 @@ class App extends React.Component {
               </div>
               <div id="aboutMeTextContainer">
                 <p class="sectionText" id="aboutMeText">
-                  <span style={{fontWeight:700}}>Previous Employment:</span> Software Development Co-Op at <a href="https://whoop.com">WHOOP Inc</a> <br/>
+                  <span style={{fontWeight:700}}>Starting January</span> Software Development Co-Op at <a href="https://www.hubspot.com/">HubSpot</a> <br/>
                   <span style={{fontWeight:700}}>Education:</span> Northeastern University fourth-year <br/>
                   <span style={{fontWeight:700}}>Major:</span> Computer Science with a minor in Math <br/>
                   <span style={{fontWeight:700}}>Location:</span> Boston, MA <br/>
