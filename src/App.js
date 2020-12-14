@@ -18,6 +18,8 @@ import stoke from './assets/ic_stoke.png'
 import bakedUp from './assets/ic_baked_up.jpg'
 import cookiecutter from './assets/ic_cookie.png'
 import deltnu from './assets/ic_delt.jpg'
+import poke from './assets/poke.png'
+
 
 
 class App extends React.Component {
@@ -107,7 +109,7 @@ class App extends React.Component {
               </div>
               <div id="aboutMeTextContainer">
                 <p class="sectionText" id="aboutMeText">
-                  <span style={{fontWeight:700}}>Starting January</span> Software Development Co-Op at <a href="https://www.hubspot.com/">HubSpot</a> <br/>
+                  <span style={{fontWeight:700}}>Starting January:</span> Software Development Co-Op at <a href="https://www.hubspot.com/">HubSpot</a> <br/>
                   <span style={{fontWeight:700}}>Education:</span> Northeastern University fourth-year <br/>
                   <span style={{fontWeight:700}}>Major:</span> Computer Science with a minor in Math <br/>
                   <span style={{fontWeight:700}}>Location:</span> Boston, MA <br/>
@@ -186,6 +188,11 @@ class App extends React.Component {
               </div>
               <div id="projectsContainer">
                 <SectionHeader title="Projects"/>
+                <ProjectCard
+                  icon={poke}
+                  title="PokéPlaylist"
+                  content="Turn your Favorite Spotify Artists into Pokémon cards."
+                  bullets={["Built using React/HTML/CSS.", "Utilizes the Spotify API to gather artist data and user metrics.", "Totaled at over 230,000 monthly users, with users on every continent."]}/>
                 <ProjectCard
                   icon={stoke}
                   title="Stoke for Android"

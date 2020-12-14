@@ -13,7 +13,6 @@ class SkillsPillar extends React.Component {
         return (
             <div style={{marginTop: '24px'}}>
                 <h2 class="skillsHeader">{this.props.pillar}</h2>
-                <SkillsBar percentage={this.props.percentage}/>
                 {skills}
             </div>
         )

@@ -45,7 +45,10 @@
     margin-right: auto;
     display: block;
     width: 10vh;
+    height: 10vh;
     border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 2px 4px 8px 4px rgba(0,0,0,0.2);
   }
 
   #bulletsList {
